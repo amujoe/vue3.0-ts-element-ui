@@ -13,8 +13,5 @@ import MaskRight from "@/components/MaskRight.vue"; // @ is an alias to /src
     MaskRight,
   },
 })
-export default class Home extends Vue {
-
-  
-}
+export default class Home extends Vue {}
 </script>

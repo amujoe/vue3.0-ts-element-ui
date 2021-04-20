@@ -1,9 +1,9 @@
 <template>
   <div class="mask">
-      <!-- 背景 -->
-      <div class="mask-bg"></div>
-      <!-- 内容插槽 -->
-      <slot></slot>
+    <!-- 背景 -->
+    <div class="mask-bg"></div>
+    <!-- 内容插槽 -->
+    <slot></slot>
   </div>
 </template>
 
@@ -21,20 +21,20 @@ export default class MaskRight extends Vue {
 </script>
 
 <style scoped lang="scss">
-.mask{
-    position: fixed;
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  .mask-bg {
+    position: absolute;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
-    overflow: scroll;
-    .mask-bg{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.2)
-    }
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 </style>
